@@ -81,7 +81,7 @@ i18nStrings.zh = {
      */
     common: {
         title: "万亿免费{draw}",
-        title_rich: "<span class='number'>一万亿</span>次免费{draws}",
+        title_rich: "<span class='number'>万亿</span>免费{draws}",
 
         draw: "{draws}",
         draw_inCooldown: "冷却中",
