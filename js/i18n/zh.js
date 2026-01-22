@@ -7,24 +7,28 @@ i18nStrings.zh = {
     /** The primary verb. See `verb` for more info. */
     primaryVerb: "draw",
 
-    /**
+    /** 
      * A list of verbs for the player to choose from. Each verb contains a list of forms
-     * that are used to be inserted into strings.
-     *
-     * For example: In English, `"free {draws}"` can be replaced into "free draws", "free pulls",
-     * or "free summons" based on the verb the player selected in Settings.
-     *
-     * You can declare as much verb forms as your language needs.
-     *
+     * that are used to be inserted into strings. For example: In English, `"free {draws}"` can be replaced 
+     * into "free draws", "free pulls", or "free summons" based on the verb the player selected in Settings.
+     * 
+     * Because a language might have different verbs to refer to the act of drawing, this is not a hard list.
+     * Feel free to add or remove verbs as fit for your language.
+     * 
+     * Each verb can contain different forms of the same verb needed for the language, i.e. in English a verb
+     * can have a past tense (drew), a present participle (drawing), and a past participle (drawn).
+     * Keys of forms are used to be referenced in the string so it's recommended to be translated. You can 
+     * declare as much verb forms as your language needs.
+     * 
      * `_anim` is used to determine per-verb special card opening animation. For example: `_anim: "spin"`
      * makes the card pack spin while it is opened and should be used on verbs that are near in meaning
      * to the word "spin".
-     *
+     * 
      * `_equiv` declares a verb's equivalent verb in English and is used to determine which verb to change to
      * when the player changes the game's language.
-     *
-     * @type {{[verb: string]: { _equiv?: string, _anim?: string, [form: string]: string }}}
-     */
+     * 
+     * @type {{[verb: string]: { _equiv?: string, _anim?: string, [form: string]: string }}} 
+    */
     verbs: {
         draw: {
             draw: "抽",
